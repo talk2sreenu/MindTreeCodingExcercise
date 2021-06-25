@@ -22,10 +22,10 @@ public class RestAssuredAPITest {
 		String employeeAge = res.body().jsonPath().get("data.employee_age").toString();
 		
 		Assert.assertEquals(res.getStatusCode(), 200);
-		Assert.assertNotNull(employeeId, "Employeed Id : "+ employeeId + " has been fetched using Get method");	
-		Assert.assertNotNull(employeeName, "Employeed Name : "+ employeeName + " has been fetched using Get method");
-		Assert.assertNotNull(employeeSalary, "Employeed Salary : "+ employeeSalary + " has been fetched using Get method");
-		Assert.assertNotNull(employeeAge, "Employeed Age : "+ employeeAge + " has been fetched using Get method");
+		Assert.assertNotNull(employeeId, "Employeed Id not fetched using Get method");	
+		Assert.assertNotNull(employeeName, "Employeed Name not fetched using Get method");
+		Assert.assertNotNull(employeeSalary, "Employeed Salary not fetched using Get method");
+		Assert.assertNotNull(employeeAge, "Employeed Age not fetched using Get method");
 	}
 	
 	@Test

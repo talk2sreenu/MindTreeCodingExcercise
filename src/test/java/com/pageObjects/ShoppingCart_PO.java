@@ -27,7 +27,7 @@ public class ShoppingCart_PO extends BaseTest{
 	
 	public void validateCart() {
 		String cartTotal = lblCartTotal.getText().trim();
-		Assert.assertEquals(cartTotal, SearchResults_PO.itemPrice, "Item Price matches from Cart to CheckOut Page");	
+		Assert.assertEquals(cartTotal, SearchResults_PO.itemPrice, "Item Price Not matched from Cart to CheckOut Page");	
 		btnProceedToCheckOut.click();	
 	}
 }

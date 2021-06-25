@@ -43,7 +43,7 @@ public class SearchResults_PO extends BaseTest{
 		}
 		lnkSearchResults.click();
 		itemPrice = lblItemPrice.getText().trim();
-		Assert.assertEquals(itemPrice, searchItemPrice, "Item Price matches from Search Results to Cart");
+		Assert.assertEquals(itemPrice, searchItemPrice, "Item Price not matched from Search Results to Cart");
 		btnAddToCart.click();
 	}
 }
